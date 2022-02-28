@@ -22,7 +22,7 @@ public class Baignoire implements Runnable{
         do {
             try {
                 setvEau(vEau - vFuite);
-                System.out.println(this + " Fuite");
+                System.out.println(this + " -");
             } catch (Exception e) {
                 System.out.println("La baignoire est vide CATCH");
             }

@@ -19,13 +19,13 @@ public class Robinet implements Runnable {
         do {
             try {
                 baignoire.setvEau(baignoire.getvEau() + debit);
-                System.out.println(baignoire + " Débit");
+                System.out.println(baignoire + " +");
             } catch (Exception e) {
-                System.out.println("La baignoire est pleine CATCH");
+                System.out.println("La baignoire est pleine");
             }
         } while ( baignoire.getvEau() + debit <= baignoire.getvMax() );
 
-        System.out.println("La baignoire est pleine NOCATCH");
+        System.out.println("La baignoire est pleine");
     }
 
     @Override
